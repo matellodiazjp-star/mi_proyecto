@@ -30,9 +30,9 @@ body {
     border: none;
     font-size: 50px;
     padding: 100px;
+    max-width: 900px;
+    margin: 10px auto;
     border-radius: 10px;
     cursor: pointer;
     margin-top: 15px;
-    margin-left: 300px;
-    
 }
