@@ -1,0 +1,24 @@
+.card {
+    padding: 10px;
+    column-count: 3;
+    column-gap: 20px;
+    border: 30px;
+    display: flex;
+}
+.butt1 img {
+     height: 300px;
+     width: 300px;
+     cursor: pointer;
+}
+.butt2 img {
+     height: 300px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.butt3 img {
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+
+}
