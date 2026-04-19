@@ -26,7 +26,7 @@ body {
     font-size: 30px;
     cursor: pointer;
 }
-.card button {
+.hero button {
     border: none;
     font-size: 50px;
     padding: 100px;
