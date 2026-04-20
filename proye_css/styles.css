@@ -17,6 +17,10 @@ body {
     background-color: orangered;
     border-bottom: 1px solid #ddd;
 }
+header:hover {
+     transform: translateY(-10px);
+    box-shadow: 0 8px 20px;
+}
 .header h2 {
     font-size: 30px;
     margin: 0;
@@ -26,13 +30,28 @@ body {
     font-size: 30px;
     cursor: pointer;
 }
+.banner {
+    padding: 30px;
+}
+.banner:hover {
+     transform: translateY(-10px);
+    box-shadow: 0 8px 20px;
+}
+.hero {
+    width: 100%;
+    padding: 0 10px;
+   background-color: rgb(10, 2, 2);
+}
 .hero button {
+    background-color: red;
     border: none;
     font-size: 50px;
     padding: 100px;
-    max-width: 900px;
-    margin: 10px auto;
+    width: 100%;
+    flex: 1;
+    margin: 20px auto;
     border-radius: 10px;
     cursor: pointer;
     margin-top: 15px;
+    
 }
