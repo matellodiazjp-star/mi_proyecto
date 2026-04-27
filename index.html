@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OutletPRO</title>
+    <title>OutleAR</title>
     <link rel="stylesheet" href="proye_css/styles.css">
     <link rel="stylesheet" href="proye_css/categorias.css">
     <link rel="stylesheet" href="proye_css/productos.css">
@@ -11,35 +11,28 @@
     <link href ="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">">
 </head>
 <body>
-    <header class="header">
-        <h2>OutletPRO🔥</h2>
-        <div class="icon">
-            <span>🔍</span>
-            <span>👤</span>
-        </div>
+    <header>
+       <div class="logo">OutleAR</div>
+       <button class="menu-btn" id="menuBtn">☰</button>
+
+       <nav class="menu" id="menu">
+          <a href="#">tiendas</a>
+           <a href="#">marcas</a>
+            <a href="#">airdrop</a>
+             <a href="#">disponibles</a>
+       </nav>
     </header>
 
-    <section class="banner">
-        <div class="hero">
-        <button>ofertas del %</button>
-        </div>
-    </section>
+    <section class="carrusel">
 
-    <section class="cat">
-        <div class="card">
-            <button class="butt1">
-                <img src="img/ropa.jpeg" alt="ropa">
-                <p>Ropa</p>
-            </button>
-            <button class="butt2">
-                <img src="img/tenis.jpeg" alt="zapatos">
-                <p>Zapatos</p>
-            </button>
-            <button class="butt3">
-                <img src="img/accesorios.jpeg" alt="accesorios">
-                <p>Accesorios</p>
-            </button>
+        <div class="slides" id="slides">
+            <div class="slide">🔥 Ofertas</div>
+            <div class="slide">👕 Ropa</div>
+            <div class="slide">👟 Tenis</div>
+            <div class="slide">🧢 Accesorios</div>
         </div>
+        <button class="prev" id="prev">‹</button>
+        <button class="next" id="next">›</button>
     </section>
 
     <section class="targetas">
@@ -94,5 +87,32 @@
             <p>Perfil</p>
         </div>
     </section>
+    <script>
+        const btn = document.getElementById("menuBtn");
+        const menu = document.getElementById("menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+
+        // ------------carrusel----------------
+     const slides = document.getElementById("slides");
+const next = document.getElementById("next");
+const prev = document.getElementById("prev");
+
+let index = 0;
+
+next.addEventListener("click", () => {
+  index++;
+  if (index > 3) index = 0;
+  slides.style.transform = `translateX(-${index * 100}%)`;
+});
+
+prev.addEventListener("click", () => {
+  index--;
+  if (index < 0) index = 3;
+  slides.style.transform = `translateX(-${index * 100}%)`;
+});
+    </script>
 </body script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> >
 </html>

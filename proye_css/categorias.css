@@ -1,25 +1,33 @@
-.card {
-    padding: 10px;
-    column-count: 3;
-    column-gap: 200px;
-    border: 30px;
+.carrusel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.slides {
     display: flex;
-    background-color: rgb(10, 2, 2);
+    transition: transform 0.4s ease;
 }
-.card img {
-    height: 300px;
-    width: 300px;
-    cursor: pointer;
+.slide {
+    min-width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background: #ddd;
 }
-.card p {
-      background-color: rgb(39, 19, 0);
-      color: azure;
-      font-size: 25px;
-      cursor: pointer;
-      border-radius: 50%;
-      padding: 20px;
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
 }
-.card button:hover {
-     transform: translateY(-10px);
-    box-shadow: 0 8px 20px;
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
 }

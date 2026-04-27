@@ -7,16 +7,41 @@
 
 body {
     line-height: 1.5;
-
 }
-.header {
+header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: orangered;
-    border-bottom: 1px solid #ddd;
+    background-color: gray;
 }
+.logo {
+    font-size: 24px;
+}
+.menu-btn {
+    margin-left: auto;
+}
+.menu{
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 150px;
+}
+.menu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.menu-btn{
+    font-size: 24px;
+    background: none;
+    border: none;
+}  
+.menu.active {
+    display: flex;
+}  
 header:hover {
      transform: translateY(-10px);
     box-shadow: 0 8px 20px;
@@ -43,7 +68,7 @@ header:hover {
    background-color: rgb(10, 2, 2);
 }
 .hero button {
-    background-color: red;
+    background-color: rgb(160, 59, 59);
     border: none;
     font-size: 50px;
     padding: 100px;
